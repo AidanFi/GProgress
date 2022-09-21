@@ -6,11 +6,15 @@ var ctrlHome = require('../controllers/home');
 var ctrlScores = require('../controllers/scores');
 var ctrlOthers = require('../controllers/others');
 
-//
-
-/* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'GProgress' });
-});
-
+// Home
+router.get('/', ctrlHome.index);
 module.exports = router;
+
+// Scores
+router.get('/scores', ctrlScores.index);
+module.exports = router;
+
+// Others
+router.get('/others', ctrlOthers.index);
+module.exports = router;
+
