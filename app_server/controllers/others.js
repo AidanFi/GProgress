@@ -7,3 +7,7 @@ module.exports.contact = function(req, res){
     res.render('contact', { title: 'Contact'});
 };
 
+module.exports.tutorials = function(req, res){
+    res.render('tutorials', { title: 'Tutorials'});
+};
+

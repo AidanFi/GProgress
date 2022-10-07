@@ -5,13 +5,16 @@ block content
   head
   body
     .header
-      h1 GProgress
-      p A free tool to track your progress as a golfer
+      .logo 
+        img.logo(src='images/logo.jpeg')
+      //h1 GProgress
+      //p A free tool to track your progress as a golfer
     .navbar
-      a.active(href='#') Home
-      a(href='#') Link
-      a(href='#') Link
-      a.right(href='#') Link
+      a(href='#') Other
+      a(href='#') Courses
+      a(href='#') Scores
+      a(href='#') Login
+      a.active(href='/') Home
     .image-block 
       img.img-fluid(src='images/golf2.jfif')
       img.img-fluid(src='images/golf3.jpg')

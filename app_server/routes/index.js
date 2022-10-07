@@ -7,6 +7,7 @@ var ctrlScores = require('../controllers/scores');
 var ctrlOthers = require('../controllers/others');
 var ctrlCourses = require('../controllers/courses');
 var ctrlContact = require('../controllers/others');
+var ctrlTutorials = require('../controllers/others')
 
 // Home
 router.get('/', ctrlHome.index);
@@ -22,6 +23,8 @@ router.get('/others', ctrlOthers.index);
 
 //contact
 router.get('/contact', ctrlContact.contact);
+
+router.get('/tutorials', ctrlTutorials.tutorials);
 
 module.exports = router;
 
