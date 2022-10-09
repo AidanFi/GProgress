@@ -136,7 +136,13 @@ body {
 }
 
 .grid {
+  margin-top: 10px;
   column-count: 4;
   column-width: 20%;
   column-gap: normal;
+}
+
+.video {
+  width: 100%;
+  height: auto;
 }
