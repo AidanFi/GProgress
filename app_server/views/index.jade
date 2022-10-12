@@ -2,51 +2,120 @@ extends layout
 
 block content
   html
-  head
-  body
-    .header
+    head
+    body
+      header 
+        .container
+          .logo-container
+            h3.logo
+              | G
+              span Progress
+          .nav-btn
+            .nav-links
+              ul
+                li.nav-link
+                  a(href="#") Home
+                li.nav-link
+                  a(href="#") Scores 
+                    i.fas.fa-caret-down
+                  .dropdown 
+                    ul
+                      li.dropdown-link
+                        a(href="#") Link 1
+                      li.dropdown-link
+                        a(href="#") Link 2
+                      li.dropdown-link
+                        a(href="#") Link 3
+                      li.dropdown-link
+                        a(href="#") Link 4
+                    .arrow 
+                li.nav-link
+                  a(href="#") Courses 
+                    i.fas.fa-caret-down
+                  .dropdown 
+                    ul
+                      li.dropdown-link
+                        a(href="#") Link 1
+                      li.dropdown-link
+                        a(href="#") Link 2
+                      li.dropdown-link
+                        a(href="#") Link 3
+                      li.dropdown-link
+                        a(href="#") Link 4
+                    .arrow 
+                li.nav-link
+                  a(href="#") Other
+                    i.fas.fa-caret-down
+                  .dropdown 
+                    ul
+                      li.dropdown-link
+                        a(href="#") Link 1
+                      li.dropdown-link
+                        a(href="#") Link 2
+                      li.dropdown-link
+                        a(href="#") Link 3
+                      li.dropdown-link
+                        a(href="#") Link 4
+                    .arrow
+            .log-sign 
+              a.btn.transparent Log in
+              a.btn.solid Sign up
+      main
+        //section
+          .overlay
+      .hero
+        video(autoplay='', loop='', muted='', plays-inline='').back-video
+          source(src='videos/golf_video.mp4', type='video/mp4')
+          |       Your browser does not support this video type.      
+        .content 
+          h3.logo
+            | G
+            span Progress
+          p.sub Join now to begin tracking your progress as a golfer.
+          .log-sign-two 
+              a.btn.transparent Log in
+              a.btn.solid Sign up
+    //.header
       .logo
         a(href='/') 
           img.logo(src='images/glogo.png')
-      //h1 GProgress
-      //p A free tool to track your progress as a golfer
-    .navbar
-      .login
-        a(href='#') Login
-      .dropdown
-        button.dropbtn Dropdown
-        .dropdown-content
-          a(href='#') Link 1
-          a(href='#') Link 2
-          a(href='#') Link 3
+      .navbar
+        .login
+          a(href='#') Login
+        .dropdown
+          button.dropbtn Dropdown
+          .dropdown-content
+            a(href='#') Link 1
+            a(href='#') Link 2
+            a(href='#') Link 3
 
-      .dropdown
-        button.dropbtn Dropdown
-        .dropdown-content
-          a(href='#') Link 1
-          a(href='#') Link 2
-          a(href='#') Link 3
+        .dropdown
+          button.dropbtn Dropdown
+          .dropdown-content
+            a(href='#') Link 1
+            a(href='#') Link 2
+            a(href='#') Link 3
 
-      .dropdown
-        button.dropbtn Dropdown
-        .dropdown-content
-          a(href='#') Link 1
-          a(href='#') Link 2
-          a(href='#') Link 3
+        .dropdown
+          button.dropbtn Dropdown
+          .dropdown-content
+            a(href='#') Link 1
+            a(href='#') Link 2
+            a(href='#') Link 3
 
-      .dropdown
-        button.dropbtn Dropdown
-        .dropdown-content
-          a(href='#') Link 1
-          a(href='#') Link 2
-          a(href='#') Link 3
+        .dropdown
+          button.dropbtn Dropdown
+          .dropdown-content
+            a(href='#') Link 1
+            a(href='#') Link 2
+            a(href='#') Link 3
 
-    .video
-      video(autoplay muted)
-        source(src='video/golf_video.mp4', type='video/mp4')
+    //.video
+      video(autoplay)
+        source(src='video/golf_video.mp4', type='video/ogg')
 
     
-    .grid 
+    //.grid 
       img.img-fluid(src='images/golf2.jfif')
       img.img-fluid(src='images/golf3.jpg')
       img.img-fluid(src='images/golf1.jfif')
@@ -62,5 +131,5 @@ block content
       img.img-fluid(src='images/golf3.jpg')
       img.img-fluid(src='images/golf1.jfif')
       img.img-fluid(src='images/golf4.jpg')
-    .footer
+    //.footer
       h2 Footer
