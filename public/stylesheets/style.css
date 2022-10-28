@@ -254,9 +254,9 @@ section {
   justify-content: center;
   align-items: center;
   grid-template-columns: 33% 33% 33%;
-  grid-template-rows: 5rem;
-  padding: 3rem 7rem;
-  gap: 25px 25px;
+  grid-template-rows: 8rem;
+  padding: 4rem 7rem;
+  gap: 40px 40px;
   color: white;
 }
 
