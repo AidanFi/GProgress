@@ -15,5 +15,9 @@ mongoose.connection.on('disconnected', () => {
 
 
 require('./user.js')
+require('./scores.js')
+require('./reviews.js')
+
+
 
 
