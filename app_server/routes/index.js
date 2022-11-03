@@ -8,12 +8,14 @@ var ctrlOthers = require('../controllers/others');
 var ctrlCourses = require('../controllers/courses');
 var ctrlContact = require('../controllers/others');
 var ctrlTutorials = require('../controllers/others')
+var ctrlNewScore = require('../controllers/scores');
 
 // Home
 router.get('/', ctrlHome.index);
 
 // Scores
 router.get('/scores', ctrlScores.index);
+router.get('/new-score', ctrlNewScore.newScore)
 
 // Courses
 router.get('/courses', ctrlCourses.index);

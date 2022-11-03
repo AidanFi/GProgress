@@ -1,0 +1,64 @@
+extends layout
+
+block content
+  html
+    head
+        link(rel='stylesheet', href='/stylesheets/newScore.css')
+    body
+      header 
+        .container
+          .logo-container
+            h3.logo
+              | G
+              span Progress
+          .nav-btn
+            .nav-links
+              ul
+                li.nav-link
+                  a(href="#") Home
+                li.nav-link
+                  a(href="#") Scores 
+                    i.fas.fa-caret-down
+                  .dropdown 
+                    ul
+                      li.dropdown-link
+                        a(href="#") New Score
+                      li.dropdown-link
+                        a(href="#") Edit Scores
+                      li.dropdown-link
+                        a(href="#") Statistics
+                      li.dropdown-link
+                        a(href="#") Leaderboard
+                    .arrow 
+                li.nav-link
+                  a(href="#") Courses 
+                    i.fas.fa-caret-down
+                  .dropdown 
+                    ul
+                      li.dropdown-link
+                        a(href="#") Link 1
+                      li.dropdown-link
+                        a(href="#") Link 2
+                      li.dropdown-link
+                        a(href="#") Link 3
+                      li.dropdown-link
+                        a(href="#") Link 4
+                    .arrow 
+                li.nav-link
+                  a(href="#") Other
+                    i.fas.fa-caret-down
+                  .dropdown 
+                    ul
+                      li.dropdown-link
+                        a(href="#") Link 1
+                      li.dropdown-link
+                        a(href="#") Link 2
+                      li.dropdown-link
+                        a(href="#") Link 3
+                      li.dropdown-link
+                        a(href="#") Link 4
+                    .arrow
+            .log-sign 
+              a.btn.transparent Log in
+              a.btn.solid Sign up
+      main
