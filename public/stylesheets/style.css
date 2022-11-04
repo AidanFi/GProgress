@@ -6,10 +6,8 @@
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  overflow: visible;
   background-color: #222;
 }
-
 
 ul {
   list-style: none;
@@ -27,13 +25,12 @@ a {
   z-index: 1000;
   height: 3rem;
 }
-
 /*
 section {
   position: relative;
   height: calc(100vh - 3rem);
   width: 100%;
-  overflow: visible;
+  overflow: hidden;
 }
 
 .overlay {

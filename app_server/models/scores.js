@@ -11,5 +11,6 @@ const scoreSchema = new mongoose.Schema({
         required: true
     },
     par: [Number],
-    strokes: [Number]
+    strokes: [Number],
+    totalScore: Number
 });
