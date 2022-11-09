@@ -21,3 +21,5 @@ const reviewSchema = new mongoose.Schema({
         'default': Date.now
     }
 });
+
+mongoose.model('Reviews', reviewSchema);

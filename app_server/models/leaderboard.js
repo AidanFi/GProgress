@@ -5,3 +5,5 @@ const leaderboardSchema = new mongoose.Schema({
     avgScore: Number,
     bestScore: Number
 });
+
+mongoose.model('Leaderboard', leaderboardSchema);

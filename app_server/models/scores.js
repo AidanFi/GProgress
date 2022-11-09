@@ -14,3 +14,5 @@ const scoreSchema = new mongoose.Schema({
     strokes: [Number],
     totalScore: Number
 });
+
+mongoose.model('Scores', scoreSchema);
