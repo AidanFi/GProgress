@@ -9,6 +9,7 @@ var ctrlCourses = require('../controllers/courses');
 var ctrlContact = require('../controllers/others');
 var ctrlTutorials = require('../controllers/others')
 var ctrlNewScore = require('../controllers/scores');
+var ctrlEditScores = require('../controllers/scores');
 
 // Home
 router.get('/', ctrlHome.index);
@@ -16,6 +17,7 @@ router.get('/', ctrlHome.index);
 // Scores
 router.get('/scores', ctrlScores.index);
 router.get('/new-score', ctrlNewScore.newScore)
+router.get('/edit-scores', ctrlEditScores.editScores)
 
 // Courses
 router.get('/courses', ctrlCourses.index);

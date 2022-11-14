@@ -5,3 +5,7 @@ module.exports.index = function(req, res){
 module.exports.newScore = function(req, res){
     res.render('newScore', { title: 'new-score'});
 };
+
+module.exports.editScores = function(req, res){
+    res.render('editScores', { title: 'edit-scores'});
+};
