@@ -10,6 +10,8 @@ var ctrlContact = require('../controllers/others');
 var ctrlTutorials = require('../controllers/others')
 var ctrlNewScore = require('../controllers/scores');
 var ctrlEditScores = require('../controllers/scores');
+var ctrlStatistics = require('../controllers/scores');
+var ctrlLeaderboard = require('../controllers/scores');
 
 // Home
 router.get('/', ctrlHome.index);
@@ -18,6 +20,8 @@ router.get('/', ctrlHome.index);
 router.get('/scores', ctrlScores.index);
 router.get('/new-score', ctrlNewScore.newScore)
 router.get('/edit-scores', ctrlEditScores.editScores)
+router.get('/statistics', ctrlStatistics.statistics)
+router.get('/leaderboard', ctrlLeaderboard.leaderboard)
 
 // Courses
 router.get('/courses', ctrlCourses.index);
