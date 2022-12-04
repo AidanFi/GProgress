@@ -11,3 +11,11 @@ module.exports.tutorials = function(req, res){
     res.render('tutorials', { title: 'Tutorials'});
 };
 
+module.exports.signup = function(req, res){
+    res.render('signup', { title: 'Signup'});
+};
+
+module.exports.login = function(req, res){
+    res.render('login', { title: 'Login'});
+};
+

@@ -6,33 +6,34 @@ var ctrlHome = require('../controllers/home');
 var ctrlScores = require('../controllers/scores');
 var ctrlOthers = require('../controllers/others');
 var ctrlCourses = require('../controllers/courses');
-var ctrlContact = require('../controllers/others');
-var ctrlTutorials = require('../controllers/others')
-var ctrlNewScore = require('../controllers/scores');
-var ctrlEditScores = require('../controllers/scores');
-var ctrlStatistics = require('../controllers/scores');
-var ctrlLeaderboard = require('../controllers/scores');
 
 // Home
 router.get('/', ctrlHome.index);
 
 // Scores
 router.get('/scores', ctrlScores.index);
-router.get('/new-score', ctrlNewScore.newScore)
-router.get('/edit-scores', ctrlEditScores.editScores)
-router.get('/statistics', ctrlStatistics.statistics)
-router.get('/leaderboard', ctrlLeaderboard.leaderboard)
+router.get('/new-score', ctrlScores.newScore)
+router.get('/edit-scores', ctrlScores.editScores)
+router.get('/statistics', ctrlScores.statistics)
+router.get('/leaderboard', ctrlScores.leaderboard)
 
 // Courses
-router.get('/courses', ctrlCourses.index);
+router.get('/courses', ctrlCourses.courses);
+router.get('/reviews', ctrlCourses.reviews);
+router.get('/add-course', ctrlCourses.addcourse);
 
 // Others
 router.get('/others', ctrlOthers.index);
 
 //contact
-router.get('/contact', ctrlContact.contact);
+router.get('/contact-us', ctrlOthers.contact);
 
-router.get('/tutorials', ctrlTutorials.tutorials);
+router.get('/tutorials', ctrlOthers.tutorials);
+
+//signup / login
+router.get('/signup', ctrlOthers.signup);
+
+router.get('/login', ctrlOthers.login);
 
 module.exports = router;
 

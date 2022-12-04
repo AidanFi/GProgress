@@ -1,15 +1,57 @@
-extends layout 
+extends layout
 
-block content 
+block content
   html
-  head
-  body
-    .header
-      h1 GProgress
-      p A free tool to track your progress as a golfer
-    .navbar
-      a.active(href='/') Home
-      a(href='/tutorials') Other
-      a(href='#') Courses
-      a(href='#') Scores
-      a(href='#') Login
+    head
+    body
+      header 
+        .container
+          .logo-container
+            h3.logo
+              | G
+              span Progress
+          .nav-btn
+            .nav-links
+              ul
+                li.nav-link
+                  a(href="/") Home
+                li.nav-link
+                  a(href="") Scores 
+                    i.fas.fa-caret-down
+                  .dropdown 
+                    ul
+                      li.dropdown-link
+                        a(href="new-score") New Score
+                      li.dropdown-link
+                        a(href="edit-scores") Edit Scores
+                      li.dropdown-link
+                        a(href="/statistics") Statistics
+                      li.dropdown-link
+                        a(href="/leaderboard") Leaderboard
+                    .arrow 
+                li.nav-link
+                  a(href="") Courses 
+                    i.fas.fa-caret-down
+                  .dropdown 
+                    ul
+                      li.dropdown-link
+                        a(href="/courses") Courses Database
+                      li.dropdown-link
+                        a(href="/reviews") Course Reviews
+                      li.dropdown-link
+                        a(href="/add-course") Add a Course
+                    .arrow 
+                li.nav-link
+                  a(href="") Other
+                    i.fas.fa-caret-down
+                  .dropdown 
+                    ul
+                      li.dropdown-link
+                        a(href="/tutorials") Tutorials
+                      li.dropdown-link
+                        a(href="/contact-us") Contact Us
+                    .arrow
+            .log-sign 
+              a(href="/login").btn.transparent Log in
+              a(href="/signup").btn.solid Sign up
+      main

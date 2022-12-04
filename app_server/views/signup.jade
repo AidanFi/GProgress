@@ -1,0 +1,33 @@
+extends layout
+
+block content
+  html
+    head
+        link(rel='stylesheet', href='/stylesheets/login.css')
+    body
+        .signup
+            h1 Sign Up
+            h4 It's free and only takes a minute 
+            form
+                label First Name
+                input(type="text", placeholder="")
+                label Last Name
+                input(type="text", placeholder="")
+                label Email
+                input(type="email", placeholder="")
+                label Password
+                input(type="password", placeholder="")
+                label Confirm Password
+                input(type="password", placeholder="")
+                input(type="button", value="Submit")
+            p 
+                | By clicking the Sign Up button, you agree to our 
+                a(href='#') Terms and Conditions 
+                | and 
+                a(href='#') Policy Privacy
+                |.
+        p.para2 
+            | Already have an account? 
+            a(href="/login") Login here
+
+        
